@@ -28,4 +28,13 @@ export class UserService {
 
     this.route.navigate(['/login']);
   }
+
+  isLogged() : boolean{
+    if(this.currentUser != null){
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
 }
